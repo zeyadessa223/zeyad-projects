@@ -1,0 +1,291 @@
+body{ 
+    font-family: "Roboto",sans-serif;
+   
+}
+.main-title::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color:yellow;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.navbar{
+    background-color: rgb(24, 122, 24)
+}
+.navbar .navbar-nav .nav-link
+{
+    color: white;
+}
+.navbar .navbar-nav .nav-link:active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus{
+color: #33d1cc;
+}
+.bar{
+    display: block;
+}
+.search{
+    border-left: 1px solid whitesmoke
+}
+.search svg{
+    color:whitesmoke;
+}
+.navbar .navbar-toggler{
+    color: white;
+    font-size: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]
+{
+    border-color: whitesmoke;
+}
+nav a{
+    font-size: 20px;
+}
+.navbar a h1{
+    color: bisque;
+    font-style: italic;
+}
+.landing{
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 200, 67, 0.4),rgba(151, 148, 148, 0.2)) ,url(pyramida.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+.main-btn{
+    width: 350px;
+    font-size: 30px !important;
+    font-style: italic;
+    font-weight: bold;
+}
+.main-btn:hover{
+    background-color: aliceblue !important;
+    color: green !important;
+}
+.features .icon-holder{      /*the height of the surface that holds the icon*/
+    height: 200px;
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{    /*styling the number icons*/
+    font-size: 10rem;
+    color: yellowgreen;
+}
+.features .feat h4{
+    color: #33d1cc;
+}
+.container h2{
+    color:  yellowgreen;
+}
+.features {
+    background-color: #eff7fa;
+  }
+  .our-work ul .active {
+    background-color:green;
+    color: whitesmoke;
+  }
+  .our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  .our-work ul li:hover {
+    color: green;
+    background-color: yellow;
+  }
+  .myimg{
+    height: 200px !important;
+  }
+
+  #carouselExample {
+    margin-top: 20px;
+  }
+  
+  /* Style for the carousel captions */
+  .carousel-caption {
+    background-color: yellowgreen; /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .carousel-caption h5 {
+    color: #fff; /* White text color */
+  }
+  
+  .carousel-caption p {
+    color: #fff; /* White text color */
+  }
+  
+  /* Optional: Adjust the height of the carousel images */
+  .carousel-item img {
+    height: 400px; /* Adjust the height as needed */
+    
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+ 
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: green; 
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: #0056b3; 
+  }
+  .journey{
+    background-color: aliceblue;
+  }
+  .journey .row{
+    margin: 0px 96px !important;
+    padding-left: 3px;
+  }
+  .journey .row .card{
+    width: 303px !important;
+    position: relative;
+    overflow: hidden;
+ 
+  }
+
+  .card-img, .card-img-bottom, .card-img-top {
+    width: 100%;
+    height: 200px;
+}
+.badge{
+  position: absolute;
+  top:0;
+  right:0;
+  background-color: green;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.badge span{
+  color: #eff7fa;
+  font-size: 1.2rem;
+}
+.journey .card .card-body{
+  background-color: cornflowerblue; 
+}
+.journey .card .card-body h5{
+  color: #eff7fa;
+  font-style: oblique;
+}
+
+ .journey .card::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgba(101, 209, 51, 0.76);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.9s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+.journey .card:hover::before {
+  transform: translateX(0);
+}
+
+
+
+.team .img-fluid{
+    height: 200px !important;
+    width: 100% !important;
+    border-radius: 50% !important;
+}
+
+.team h2{
+    color: yellowgreen;
+}
+
+.team .box h4 {
+    background-color:green;
+  }
+  .team .box{
+   box-sizing: border-box !important;
+   
+  }
+  .box {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.9s ease-in-out;
+  }
+
+  .box:hover {
+    box-shadow: 0 0 10px rgba(69, 145, 74, 0.3);
+    transform: scale(1.1);
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+.regis-container{
+  background-color: #eff7fa;
+}
+aside h2{
+  color: aquamarine;
+}
+aside ul li{
+  font-size: 1.2rem;
+}
+form h1{
+  color: #0056b3;
+}
+  .footer {
+    background-color: green;
+  }
+  .footer .copyright > span {
+    color:aquamarine;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .footer .copyright div span {
+    color: orange;
+  }
+  .footer .contact ul svg {
+    width: 20px;
+    height: 20px;
+  }
+  .footer .facebook {
+    background-color: #1877f2;
+  }
+  .footer .twitter {
+    background-color: #1da1f2;
+  }
+  .footer .linkedin {
+    background-color: #0077b5;
+  }
+  .footer .youtube {
+    background-color: #ff0000;
+  }
+.footer a h1{
+    color:bisque;
+    font-style: italic;
+}
