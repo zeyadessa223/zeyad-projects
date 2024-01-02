@@ -1,7 +1,4 @@
-body{ 
-    font-family: "Roboto",sans-serif;
-   
-}
+
 .main-title::after{
     content: "";
     width: 120px;
